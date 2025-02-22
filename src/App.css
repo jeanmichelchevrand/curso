@@ -1,38 +1,103 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to top, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to top, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Media Queries para telas menores */
+
+/* 1440 x 851 */
+@media (max-width: 1440px) {
+  .App {
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* 1024 x 851 */
+@media (max-width: 1024px) {
+  .App {
+    padding: 10px;
+  }
+}
+
+/* 768 x 851 */
+@media (max-width: 768px) {
+  .App {
+    padding: 8px;
+    height: auto;
+    min-height: 100vh;
+  }
+  body {
+    padding: 10px;
+  }
+}
+
+/* 425 x 851 */
+@media (max-width: 425px) {
+  .App {
+    padding: 5px;
+  }
+  body {
+    padding: 5px;
+  }
+}
+
+/* 375 x 851 */
+@media (max-width: 375px) {
+  .App {
+    padding: 4px;
+  }
+  body {
+    padding: 4px;
+  }
+}
+
+/* 320 x 851 */
+@media (max-width: 320px) {
+  .App {
+    padding: 3px;
+  }
+  body {
+    padding: 3px;
   }
 }

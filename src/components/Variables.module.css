@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+:root{
+    /* Cores */
+    --primary-color: #1a1a1a;
+    --secondary-color: #383838;
+    --background-color: #f7f7f7;
+    --text-color: #e4e4e4;
+    --button-color: #312b4d;
+    --button-color-hover: #02848d;
+
+    /* Tipografia */
+    --font-family: "Bebas Neue", serif;
+    --font-family-h1: "Rubik Iso", serif;
+
+    /*Sombras*/
+    --shadow-color: #e4e4e4;
+    --shadow-color-translucid: rgb(228, 228, 228, 0.75);
+    --shadow-text: #78b9ff;
+}

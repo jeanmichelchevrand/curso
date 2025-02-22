@@ -1,0 +1,149 @@
+.card_container {
+	background-color: #231E39;
+	border-radius: 10px;
+	box-shadow: 0px 10px 20px -10px var(--shadow-color-translucid);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.card_container .round {
+	border: 1px solid #03BFCB;
+	padding: 7px;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.card_container h3{
+	margin: .5em 0;
+}
+
+.description{
+	margin: 1em;
+	text-align: center;
+}
+
+.skills {
+	background-color: #1F1A36;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+	border-radius: 0 0 10px 10px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: .5em 0 0 0;
+	padding: 0;
+}
+
+.skills ul li {
+	display: inline-block;
+	border: 1px solid var(--background-color);
+	border-radius: 2px;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+	cursor: pointer;
+}
+
+.skills ul li:hover {
+	background-color: #f7f7f73b;
+	color: var(--text-color);
+}
+
+/* Media Queries para telas menores */
+
+/* 1440 x 851 */
+@media (max-width: 1440px) {
+	.card_container {
+	  width: 320px; /* Reduz a largura do card */
+	}
+  
+	.card_container .round {
+	  width: 45%; /* Reduz o tamanho da imagem */
+	}
+  
+	.skills ul li {
+	  font-size: 11px; /* Reduz o tamanho da fonte dos skills */
+	}
+  }
+  
+  /* 1024 x 851 */
+  @media (max-width: 1024px) {
+	.card_container {
+	  width: 300px; /* Reduz a largura do card */
+	}
+  
+	.card_container .round {
+	  width: 40%; /* Reduz o tamanho da imagem */
+	}
+  
+	.skills ul li {
+	  font-size: 10px; /* Reduz o tamanho da fonte dos skills */
+	}
+  }
+  
+  /* 768 x 851 */
+  @media (max-width: 768px) {
+	.card_container {
+	  width: 280px; /* Reduz a largura do card */
+	}
+  
+	.card_container .round {
+	  width: 35%; /* Reduz o tamanho da imagem */
+	}
+  
+	.skills ul li {
+	  font-size: 9px; /* Reduz o tamanho da fonte dos skills */
+	}
+  }
+  
+  /* 425 x 851 */
+  @media (max-width: 425px) {
+	.card_container {
+	  width: 250px; /* Reduz a largura do card */
+	}
+  
+	.card_container .round {
+	  width: 30%; /* Reduz o tamanho da imagem */
+	}
+  
+	.skills ul li {
+	  font-size: 8px; /* Reduz o tamanho da fonte dos skills */
+	}
+  }
+  
+  /* 375 x 851 */
+  @media (max-width: 375px) {
+	.card_container {
+	  width: 220px; /* Reduz a largura do card */
+	}
+  
+	.card_container .round {
+	  width: 25%; /* Reduz o tamanho da imagem */
+	}
+  
+	.skills ul li {
+	  font-size: 7px; /* Reduz o tamanho da fonte dos skills */
+	}
+  }
+  
+  /* 320 x 851 */
+  @media (max-width: 320px) {
+	.card_container {
+	  width: 250px;
+	  margin: 10px 0 0 0;
+	}
+  
+	.card_container .round {
+	  width: 40%;
+	}
+  
+	.skills ul li {
+	  font-size: 12px;
+	}
+  }

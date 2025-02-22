@@ -1,0 +1,94 @@
+.footer {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    cursor: default;
+}
+
+.footer p {
+    margin: 0 0 10px;
+    cursor: default;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    transition: transform .5s;
+}
+
+.socialLinks img:hover{
+    transition: transform .5s;
+    transform: scale(1.2);
+    box-shadow: 1px 1px 5px var(--shadow-color);
+    border-radius: 10px;
+}
+
+/* Media Queries para telas menores */
+
+/* 1440 x 851 */
+@media (max-width: 1440px) {
+    .footer {
+        padding: 15px;
+    }
+    .socialLinks {
+        gap: 12px;
+    }
+}
+
+/* 1024 x 851 */
+@media (max-width: 1024px) {
+    .footer {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    .socialLinks {
+        gap: 10px;
+    }
+}
+
+/* 768 x 851 */
+@media (max-width: 768px) {
+    .footer {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+    .socialLinks {
+        gap: 8px;
+    }
+}
+
+/* 425 x 851 */
+@media (max-width: 425px) {
+    .footer {
+        padding: 5px;
+        font-size: 0.7em;
+    }
+    .socialLinks {
+        gap: 5px;
+    }
+}
+
+/* 375 x 851 */
+@media (max-width: 375px) {
+    .footer {
+        padding: 4px;
+        font-size: 0.6em;
+    }
+    .socialLinks {
+        gap: 4px;
+    }
+}
+
+/* 320 x 851 */
+@media (max-width: 320px) {
+    .footer {
+        padding: 3px;
+        font-size: 0.5em;
+    }
+    .socialLinks {
+        gap: 3px;
+    }
+}
