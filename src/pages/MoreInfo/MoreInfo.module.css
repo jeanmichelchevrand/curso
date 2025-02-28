@@ -90,6 +90,32 @@
     }
 }
 
+/* 1193 x 752 */
+@media (max-width: 1193px) {
+    .Info {
+        margin: 0.8em 0 0 0;
+        scale: .7;
+    }
+    .Info > :first-child {
+        align-self: center;
+    }
+    .Info > :nth-child(2) {
+        margin: 0;
+    }
+    .customButton {
+        padding: 6px 12px;
+        font-size: 16px;
+        margin: 0;
+    }
+    .Recommendations {
+        margin: -1.5em 0;
+        scale: 0.5;
+    }
+    .Footer {
+        margin: 0;
+    }
+}
+
 /* 1024 x 851 */
 @media (max-width: 1024px) {
     .Info {

@@ -38,6 +38,16 @@ body {
   }
 }
 
+/* 1193 x 752 */
+@media (max-width: 1193px) {
+  .App {
+    padding: 10px;
+  }
+  body {
+    padding: 10px;
+  }
+}
+
 /* 1024 x 851 */
 @media (max-width: 1024px) {
   .App {
