@@ -7,6 +7,7 @@
   height: 100vh;
   padding: 20px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
@@ -22,6 +23,13 @@ body {
 }
 
 /* Media Queries para telas menores */
+
+/* 2560 x 1636 */
+@media (max-width: 2560px) {
+  .App {
+    margin: 0;
+  }
+}
 
 /* 1440 x 851 */
 @media (max-width: 1440px) {

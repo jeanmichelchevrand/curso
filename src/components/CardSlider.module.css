@@ -30,6 +30,21 @@ h1{
     color: var(--text-color);
     cursor: default;
 }
+/* 2560 x 851 */
+@media (max-width: 2560px) {
+    .card_container{
+        height: 200px;
+    }
+    .card_container img{
+        width: 90px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    .main_content p{
+       font-size: 16px; 
+    }
+}
 
 /* 1024 x 851 */
 @media (max-width: 1024px) {
