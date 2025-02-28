@@ -1,0 +1,16 @@
+.carouselContainer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 10px 1 80px; /* Margem nas laterais */
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 10s ease-in-out;
+  }
+  
+  .carouselItem {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+  }

@@ -21,49 +21,25 @@ body {
   min-height: 100vh;
 }
 
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-image: linear-gradient(to top, var(--primary-color) 0%, var(--secondary-color) 100%);
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
 /* Media Queries para telas menores */
 
 /* 1440 x 851 */
 @media (max-width: 1440px) {
   .App {
-    padding: 15px;
+    margin: -4em 0 0 0;
   }
 }
 
 /* 1024 x 851 */
 @media (max-width: 1024px) {
   .App {
-    padding: 10px;
+    margin: 4em 0 6.5em 0;
   }
 }
 
 /* 768 x 851 */
 @media (max-width: 768px) {
   .App {
-    padding: 8px;
     height: auto;
     min-height: 100vh;
   }

@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 import styles from './Carrossel.module.css';
 
 //IMAGE
-import imageJogos from '../img/jogos.png';
-import imageRoblox from '../img/roblox.png';
-import imageWeb from '../img/web.png';
-import imageRobotica from '../img/robotica.png';
+import imageJogos from '../img/jogos.jpg';
+import imageRoblox from '../img/roblox.jpg';
+import imageWeb from '../img/web.jpg';
+import imageRobotica from '../img/robotica.jpg';
 import imageTreinamento from '../img/treinamento.jpg';
 
 function Carrossel() {

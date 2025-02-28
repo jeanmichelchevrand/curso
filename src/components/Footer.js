@@ -10,7 +10,7 @@ import whatsapp from '../img/whatsapp.png';
 function Footer() {
   return (
     <div className={styles.footer}>
-        <p>&copy; {new Date().getFullYear()} Script Heroes. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Jmvcodes. Todos os direitos reservados.</p>
         
             <div className={styles.socialLinks}>
                 <a href="https://www.instagram.com/jmvcodes/" target="_blank" rel="noopener noreferrer">

@@ -9,6 +9,7 @@ import variables from '../../components/Variables.module.css';
 import Footer from '../../components/Footer';
 import CardInfo from '../../components/CardInfo';
 import CardDescription from '../../components/CardDescription';
+import Slider from '../../components/Slider';
 
 function MoreInfo() {
   return (
@@ -19,6 +20,9 @@ function MoreInfo() {
     </div>
     <div>
       <Link to="/" className={styles.customButton}>Voltar</Link>
+    </div>
+    <div className={styles.Recommendations}>
+      <Slider />
     </div>
     <div className={styles.Footer}>
       <Footer />

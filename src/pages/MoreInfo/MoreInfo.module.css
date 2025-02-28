@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0 1em;
+    gap: 0 3em;
 }
 
 .Info > :first-child {
@@ -20,7 +20,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -35,106 +35,154 @@
     background-color: #004080;
   }
 
+.Recommendations{
+    margin: 2em 0 0 0;
+}
+
 .Footer{
-    margin: 10em 0 0 0;
+    margin: 1em 0 0 0;
 }
 
 /* Media Queries para telas menores */
 
 /* 1440 x 851 */
 @media (max-width: 1440px) {
-  .Info {
-      gap: 0 0.8em;
-  }
-  .customButton {
-      padding: 8px 16px;
-      font-size: 14px;
-  }
-  .Footer {
-      margin: 8em 0 0 0;
-  }
+    .Info {
+        margin: 1em 0 0 0;
+        scale: .8;
+    }
+    .Info > :first-child {
+        align-self: center;
+    }
+    .Info > :nth-child(2) {
+        margin: 0;
+    }
+    .customButton {
+        padding: 8px 16px;
+        font-size: 18px;
+        margin: 0;
+    }
+    .Recommendations{
+        margin: -2em 0;
+        scale: 0.6;
+    }
+    .Footer {
+        margin: 0;
+    }
 }
 
 /* 1024 x 851 */
 @media (max-width: 1024px) {
-  .Info {
-      gap: 0 0.6em;
-      margin: 0 0 0 300px;
-  }
-  .customButton {
-      padding: 7px 14px;
-      font-size: 13px;
-  }
-  .Footer {
-      margin: 6em 0 0 0;
-  }
+    .Info {
+        margin: 1em 0 0 3em;
+        scale: .8;
+    }
+    .Info > :first-child {
+        align-self: center;
+    }
+    .Info > :nth-child(2) {
+        margin: 0;
+    }
+    .customButton {
+        padding: 8px 16px;
+        font-size: 18px;
+        margin: 0;
+    }
+    .Recommendations{
+        margin: 0;
+        scale: 0.6;
+    }
+    .Footer {
+        margin: 0;
+        padding: 0 0 5em 0;
+    }
 }
 
 /* 768 x 851 */
 @media (max-width: 768px) {
-  .Info {
-      flex-direction: column;
-      gap: 1em 0;
-  }
-  .Info > :first-child {
-      align-self: center;
-  }
-  .Info > :nth-child(2) {
-      margin: 0;
-  }
-  .customButton {
-      padding: 6px 12px;
-      font-size: 12px;
-  }
-  .Footer {
-      margin: 4em 0 0 0;
-  }
+    .Info {
+        flex-direction: column;
+        gap: 1em 0;
+        margin: 0;
+    }
+    .Info > :first-child {
+        align-self: center;
+    }
+    .Info > :nth-child(2) {
+        margin: 0;
+    }
+    .customButton {
+        padding: 8px 16px;
+        font-size: 18px;
+        margin: 0 0 0 30px;
+    }
+    .Recommendations{
+        margin: 1em 0 0 1em;
+        width: 800px;
+    }
+    .Footer {
+        margin: 2em 0 0 1em;
+    }
 }
 
 /* 425 x 851 */
 @media (max-width: 425px) {
-  .Info {
-      gap: 0.5em 0;
-      margin: 0 0 0 20px;
-  }
-  .customButton {
-      padding: 5px 10px;
-      font-size: 11px;
-      margin: 0 0 0 20px;
-  }
-  .Footer {
-      margin: 24px 0 0 20px;
-  }
+    .Info {
+        gap: 0.5em 0;
+        margin: 0 0 0 20px;
+    }
+    .customButton {
+        padding: 5px 10px;
+        font-size: 11px;
+        margin: 0 0 0 20px;
+    }
+    .Recommendations{
+        margin: 5em 0 0 1.5em;
+        width: 400px;
+    }
+    .Footer {
+        margin: 24px 0 0 20px;
+    }
 }
 
 /* 375 x 851 */
 @media (max-width: 375px) {
-  .Info {
-      gap: 0.4em 0;
-      margin: 0 0 0 70px;
-  }
-  .customButton {
-      padding: 4px 8px;
-      font-size: 10px;
-      margin: 0 0 0 70px;
-  }
-  .Footer {
-      margin: 40px 0 0 70px;
-  }
+    .Info {
+        gap: 0.4em 0;
+        margin: 0 0 0 70px;
+    }
+    .customButton {
+        padding: 8px 16px;
+        font-size: 16px;
+        margin: 0 0 0 70px;
+    }
+    .Recommendations{
+        margin: 5em 0 0 4.5em;
+        width: 400px;
+    }
+    .Footer {
+        padding: 0 0 1em 0;
+        margin: 30px 0 0 100px;
+    }
 }
 
 /* 320 x 851 */
 @media (max-width: 320px) {
-  .Info {
-      gap: 0.3em 0;
-      margin: 0 0 0 130px;
-  }
-  .customButton {
-      padding: 9px 12px;
-      font-size: 12px;
-      margin: 0 0 0 130px;
-  }
-  .Footer {
-    margin: 200px 0 0 130px;
-  }
+    .Info {
+        gap: 0.3em 0;
+        margin: 0 0 0 14em;
+    }
+    .customButton {
+        padding: 9px 12px;
+        font-size: 12px;
+        margin: 0 0 0 20em;
+    }
+    .Recommendations{
+        margin: 5em 0 0 14em;
+        width: 500px;
+    }
+    .Footer {
+        padding: 0 0 1em 0;
+        margin: 270px 0 0 14em;
+    }
 }

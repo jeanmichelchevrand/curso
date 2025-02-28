@@ -1,6 +1,6 @@
 //CSS
 import styles from './Body.module.css';
-import mainImage from '../img/main_image.png';
+import mainImage from '../img/main_image.jpg';
 
 function Body() {
   return (
