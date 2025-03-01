@@ -1,13 +1,14 @@
+/* App.css */
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh; /* Garante que o App ocupe pelo menos a altura da tela */
   padding: 20px;
   box-sizing: border-box;
-  overflow: hidden;
+  width: 100%; /* Garante que o App ocupe toda a largura */
 }
 
 body {
@@ -20,78 +21,35 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: 100%; /* Garante que o body ocupe toda a largura */
 }
 
-/* Media Queries para telas menores */
+/* Media Queries para Responsividade */
 
-/* 2560 x 1636 */
-@media (max-width: 2560px) {
-  .App {
-    margin: 0;
-  }
-}
-
-/* 1440 x 851 */
-@media (max-width: 1440px) {
-  .App {
-    margin: -4em 0 0 0;
-  }
-}
-
-/* 1193 x 752 */
-@media (max-width: 1193px) {
-  .App {
-    padding: 10px;
-  }
-  body {
-    padding: 10px;
-  }
-}
-
-/* 1024 x 851 */
-@media (max-width: 1024px) {
-  .App {
-    margin: 4em 0 6.5em 0;
-  }
-}
-
-/* 768 x 851 */
+/* Telas menores que 768px */
 @media (max-width: 768px) {
   .App {
-    height: auto;
-    min-height: 100vh;
+    padding: 15px; /* Reduz o padding */
   }
+
   body {
-    padding: 10px;
+    font-size: 14px; /* Reduz o tamanho da fonte */
   }
 }
 
-/* 425 x 851 */
-@media (max-width: 425px) {
+/* Telas menores que 480px */
+@media (max-width: 480px) {
   .App {
-    padding: 5px;
+    padding: 10px; /* Reduz ainda mais o padding */
   }
+
   body {
-    padding: 5px;
+    font-size: 12px; /* Reduz ainda mais o tamanho da fonte */
   }
 }
 
-/* 375 x 851 */
-@media (max-width: 375px) {
-  .App {
-    padding: 4px;
-  }
-  body {
-    padding: 4px;
-  }
-}
-
-/* 320 x 851 */
-@media (max-width: 320px) {
-  .App {
-    padding: 3px;
-  }
-  body {
-    padding: 3px;
-  }
+/* Imagens Responsivas */
+img {
+  max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+  height: auto; /* Mantém a proporção da imagem */
 }

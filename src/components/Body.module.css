@@ -3,8 +3,9 @@
     align-items: center; 
     border-radius: 10px;
     max-width: 1024px; 
-    padding: 0 20px 20px 20px; 
-    margin: 0 200px 20px 20px; 
+    padding: 20px; 
+    margin: 0 auto; /* Centraliza o contêiner */
+    box-sizing: border-box;
 } 
 
 .text_content { 
@@ -14,7 +15,7 @@
 
 .title_h1 {
     font-family: var(--font-family-h1);
-    font-size: 2.5em; 
+    font-size: 2.5rem; /* Usando rem para escalabilidade */
     color: var(--text-color); 
     margin-bottom: 10px; 
     font-weight: 400;
@@ -22,41 +23,6 @@
     font-style: normal;
     text-shadow: 0 0 1em var(--shadow-text);
     cursor: default;
-} 
-
-.text_content p {
-    font-family: var(--font-family);
-    font-size: 1.5em; 
-    color: var(--text-color); 
-    margin: 20px 0; 
-    cursor: default;
-} 
-
-.button { 
-    display: inline-block; 
-    padding: 10px 20px; 
-    font-size: 1.1em; 
-    color: var(--text-color); 
-    background-color: var(--button-color-hover); 
-    text-decoration: none; 
-    border-radius: 10px;
-    font-family: var(--font-family);
-    cursor: default;
-}
-
-.image_content { 
-    flex: 1; 
-    padding: 20px; 
-} 
-
-.image_content img { 
-    max-width: 90%; 
-    border-radius: 100%;
-    mask-image: radial-gradient(circle, white, #ffffff00);
-    -webkit-mask-image: radial-gradient(circle, white, #ffffff00);
-}
-
-.title_h1 {
     background: conic-gradient(
       #f6a2f6,
       #e74f89,
@@ -69,117 +35,133 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
+} 
+
+.text_content p {
+    font-family: var(--font-family);
+    font-size: 1.5rem; /* Usando rem para escalabilidade */
+    color: var(--text-color); 
+    margin: 20px 0; 
+    cursor: default;
+} 
+
+.button { 
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 1.1rem; /* Usando rem para escalabilidade */
+    color: var(--text-color); 
+    background-color: var(--button-color-hover); 
+    text-decoration: none; 
+    border-radius: 10px;
+    font-family: var(--font-family);
+    cursor: pointer; /* Alterado para pointer para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Adiciona transição suave */
 }
 
-/* Media Queries para telas menores */
-
-/* 1440 x 851 */
-@media (max-width: 1440px) {
-    .container {
-        margin: 0 100px 20px 100px;
-    }
-    .title_h1 {
-        font-size: 2.2em;
-    }
-    .text_content p {
-        font-size: 1.3em;
-    }
+.button:hover {
+    background-color: var(--button-color); /* Cor ao passar o mouse */
 }
 
-/* 1024 x 851 */
+.image_content { 
+    flex: 1; 
+    padding: 20px; 
+    text-align: center; /* Centraliza a imagem */
+} 
+
+.image_content img { 
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    border-radius: 100%;
+    mask-image: radial-gradient(circle, white, #ffffff00);
+    -webkit-mask-image: radial-gradient(circle, white, #ffffff00);
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas menores que 1024px */
 @media (max-width: 1024px) {
     .container {
-        margin: 0 50px 20px 50px;
+        padding: 15px;
     }
+
     .title_h1 {
-        font-size: 2em;
+        font-size: 2rem; /* Reduz o tamanho da fonte */
     }
+
     .text_content p {
-        font-size: 1.2em;
+        font-size: 1.2rem; /* Reduz o tamanho da fonte */
     }
+
     .image_content img {
-        max-width: 80%;
+        max-width: 80%; /* Reduz o tamanho da imagem */
     }
 }
 
-/* 768 x 851 */
+/* Telas menores que 768px */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
-        margin: 0 20px 20px 20px;
+        flex-direction: column; /* Empilha os elementos verticalmente */
         padding: 10px;
     }
+
     .title_h1 {
-        font-size: 1.1em;
+        font-size: 1.8rem; /* Reduz o tamanho da fonte */
+        text-align: center; /* Centraliza o texto */
     }
+
     .text_content p {
-        font-size: .9em;
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .button {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
     }
 
     .image_content img {
-        max-width: 20%;
+        max-width: 60%; /* Reduz o tamanho da imagem */
     }
 }
 
-/* 425 x 851 */
-@media (max-width: 425px) {
+/* Telas menores que 480px */
+@media (max-width: 480px) {
     .container {
-        margin: 0 10px 20px 10px;
         padding: 5px;
     }
+
     .title_h1 {
-        font-size: 1.1em;
-        padding: 0 40px 0 0;
+        font-size: 1.5rem; /* Reduz ainda mais o tamanho da fonte */
     }
+
     .text_content p {
-        font-size: .8em;
-        padding: 0 40px 0 0;
+        font-size: 0.9rem; /* Reduz ainda mais o tamanho da fonte */
     }
+
+    .button {
+        font-size: 0.9rem; /* Reduz ainda mais o tamanho da fonte */
+        padding: 8px 16px; /* Reduz o padding */
+    }
+
     .image_content img {
-        max-width: 30%;
+        max-width: 50%; /* Reduz ainda mais o tamanho da imagem */
     }
 }
 
-/* 375 x 851 */
-@media (max-width: 375px) {
-    .container {
-        margin: 0 5px 20px 5px;
-        padding: 5px;
-    }
-    .title_h1 {
-        font-size: 1.1em;
-    }
-    .text_content p {
-        font-size: .8em;
-    }
-    .button{ 
-        padding: 10px 20px; 
-        font-size: .9em; 
-    }
-    .image_content img {
-        max-width: 40%;
-    }
-}
-
-/* 320 x 851 */
+/* Telas menores que 320px */
 @media (max-width: 320px) {
-    .container {
-        margin: 0;
-        padding: 5px;
-    }
     .title_h1 {
-        font-size: 1em;
-        padding: 0 0 0 40px;
+        font-size: 1.2rem; /* Reduz ainda mais o tamanho da fonte */
     }
+
     .text_content p {
-        font-size: .7em;
-        padding: 0 0 0 40px;
+        font-size: 0.8rem; /* Reduz ainda mais o tamanho da fonte */
     }
-    .button{ 
-        padding: 5px 10px; 
-        font-size: .7em; 
+
+    .button {
+        font-size: 0.8rem; /* Reduz ainda mais o tamanho da fonte */
+        padding: 5px 10px; /* Reduz o padding */
     }
+
     .image_content img {
-        max-width: 30%;
+        max-width: 40%; /* Reduz ainda mais o tamanho da imagem */
     }
 }

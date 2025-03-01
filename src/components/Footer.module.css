@@ -1,10 +1,14 @@
+/* Footer.module.css */
 .footer {
     font-family: var(--font-family);
     color: var(--text-color);
     text-align: center;
     padding: 20px;
-    font-size: 1em;
+    font-size: 1rem; /* Usando rem para escalabilidade */
     cursor: default;
+    background-color: var(--footer-bg-color);
+    box-sizing: border-box;
+    width: 100%; /* Garante que o footer ocupe toda a largura */
 }
 
 .footer p {
@@ -16,79 +20,46 @@
     display: flex;
     justify-content: center;
     gap: 15px;
-    transition: transform .5s;
+    transition: transform 0.5s;
 }
 
-.socialLinks img:hover{
-    transition: transform .5s;
+.socialLinks img {
+    width: 30px; /* Tamanho padrão */
+    height: 30px; /* Tamanho padrão */
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.socialLinks img:hover {
     transform: scale(1.2);
     box-shadow: 1px 1px 5px var(--shadow-color);
     border-radius: 10px;
 }
 
-/* Media Queries para telas menores */
-
-/* 1440 x 851 */
-@media (max-width: 1440px) {
-    .footer {
-        padding: 15px;
-    }
-    .socialLinks {
-        gap: 12px;
-    }
-}
-
-/* 1024 x 851 */
-@media (max-width: 1024px) {
-    .footer {
-        padding: 10px;
-        font-size: 0.9em;
-    }
-    .socialLinks {
-        gap: 10px;
-    }
-}
-
-/* 768 x 851 */
+/* Media Queries para Responsividade */
 @media (max-width: 768px) {
     .footer {
-        padding: 8px;
-        font-size: 0.8em;
+        padding: 15px; /* Reduz o padding em telas menores */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
     }
-    .socialLinks {
-        gap: 8px;
+
+    .socialLinks img {
+        width: 25px; /* Reduz o tamanho dos ícones */
+        height: 25px; /* Reduz o tamanho dos ícones */
     }
 }
 
-/* 425 x 851 */
-@media (max-width: 425px) {
+@media (max-width: 480px) {
     .footer {
-        padding: 5px;
-        font-size: 0.7em;
+        padding: 10px; /* Reduz ainda mais o padding */
+        font-size: 0.8rem; /* Reduz ainda mais o tamanho da fonte */
     }
-    .socialLinks {
-        gap: 5px;
-    }
-}
 
-/* 375 x 851 */
-@media (max-width: 375px) {
-    .footer {
-        padding: 4px;
-        font-size: 0.6em;
+    .socialLinks img {
+        width: 20px; /* Reduz ainda mais o tamanho dos ícones */
+        height: 20px; /* Reduz ainda mais o tamanho dos ícones */
     }
-    .socialLinks {
-        gap: 4px;
-    }
-}
 
-/* 320 x 851 */
-@media (max-width: 320px) {
-    .footer {
-        padding: 3px;
-        font-size: 0.5em;
-    }
     .socialLinks {
-        gap: 3px;
+        gap: 10px; /* Reduz o espaçamento entre os ícones */
     }
 }
